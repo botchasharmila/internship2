@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator1.css">
+</head>
+<body>
+  <style>
+    body{
+      background-image: url('http://cfgmerchantsolutions.com/wp-content/uploads/2016/07/bigstock-A-close-up-shot-of-a-calculato-85584314.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="keypad">
+      <button onclick="clearResult()">C</button>
+      <button onclick="deleteLastChar()">&larr;</button>
+      <button onclick="appendCharacter('%')">%</button>
+      <button onclick="appendCharacter('/')">/</button>
+      <button onclick="appendCharacter('7')">7</button>
+      <button onclick="appendCharacter('8')">8</button>
+      <button onclick="appendCharacter('9')">9</button>
+      <button onclick="appendCharacter('*')">x</button>
+      <button onclick="appendCharacter('4')">4</button>
+      <button onclick="appendCharacter('5')">5</button>
+      <button onclick="appendCharacter('6')">6</button>
+      <button onclick="appendCharacter('-')">-</button>
+      <button onclick="appendCharacter('1')">1</button>
+      <button onclick="appendCharacter('2')">2</button>
+      <button onclick="appendCharacter('3')">3</button>
+      <button onclick="appendCharacter('+')">+</button>
+      <button onclick="appendCharacter('00')">00</button>
+      <button onclick="appendCharacter('0')">0</button>
+      <button onclick="appendCharacter('.')">.</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+
+  <script src="calculator1.js"></script>
+</body>
+</html>
